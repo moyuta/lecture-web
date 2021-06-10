@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- headの中身はいじらない -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のプロフィール</title>
+</head>
+
+<body>
+　<div class='tops'>
+  <h1>田中 太郎</h1>
+  <p>○○大学　経営学部 経営学科</p>
+　</div>
+
+ <div class ='middle'>
+  <img src="https://www.petio.com/wp-content/uploads/2020/01/content04_img.jpg" class='myImage'>
+  <div>
+    <p class='portfolio'>私のポートフォリオ</p>
+    <div class='middle-box'>
+      <a href="#strong-box" class='links'>
+      <div class='circle strong'>
+        <p>長所</p>
+      </div>
+    </a>
+    <a href="#timeline-box" class='links'>
+      <div class='circle wantToDo'>
+        <p>経歴</p>git init
+      </div>
+    </a>
+    <a href="#hobby-box" class='links'>
+      <div class='circle hobby'>
+        <p>趣味</p>
+      </div>
+    </a>
+    </div>
+  </div>
+ </div>
+ <div class='strong-box' id='strong-box'>
+    <h2 class='heading-text'>私の長所</h2>
+    <div class='strong-point'>
+        <p class='strong-dai'>1.<b>負けず嫌い</b>なところ</p>
+        <img src="https://www.kago-spo.or.jp/cms/wp-content/uploads/2020/09/soccer1200-1024x682.jpg" class='strong-image'>
+        <p>私は小学生からずっとサッカーをやっていました．</p>
+        <p>高校時代では関東大会ベスト8になりました．</p>
+    </div>
+    <div class='strong-point'>
+        <p class='strong-dai'>2.<b>人と仲良くする事が得意</b>なところ</p>
+        <img src="http://buzzap.net/images/2018/04/13/how-to-make-friends/top.jpg" class='strong-image'>
+        <p>私は大学生の頃，居酒屋でアルバイトをしていました．</p>
+        <p>幅広い年代の方々と話をすることが得意で人の懐に入ることが得意です．</p>
+    </div>
+    <div class='strong-point'>
+        <p class='strong-dai'>3.<b>好奇心旺盛</b>なところ</p>
+        <img src="https://www.katsuiku-academy.org/wp-content/uploads/2020/08/Depositphotos_50970563_l-2015-1024x614.jpg.webp" class='strong-image'>
+        <p>私は小学生からずっとサッカーをやっていました．</p>
+        <p>高校時代では関東大会ベスト8になりました．</p>
+    </div>
+ </div>
+
+ <div class="timeline" id='timeline-box'>
+    <h2 class='heading-text'>私の経歴</h2>
+    <ul class="timeline-list">
+        <li class="timeline-list-item">
+            <div class="date">2015年4月</div>
+            <div class="content">
+                <p><b>ガソリンスタンドでアルバイト</b></p>
+                <p>初めてのアルバイト体験でした。ここでは，お金を稼ぐ大変さを知りました。</p>
+        </div>
+        </li>
+        <li class="timeline-list-item">
+            <div class="date">2017年04月</div>
+            <div class="content">
+                <p><b>〇〇大学 経営学部入学</b></p>
+                <p>一般入試の試験で合格しました。毎日勉強して第一志望の大学に入学出来ました。</p>
+            </div>
+        </li>
+        <li class="timeline-list-item">
+            <div class="date">2017年04月</div>
+            <div class="content">
+                <p><b>居酒屋 魚丸でアルバイト</b></p>
+                <p>ホール業を勤めています。</p>
+            </div>
+        </li>
+        <li class="timeline-list-item">
+            <div class="date">2018年01月</div>
+            <div class="content">......</div>
+        </li>
+        <li class="timeline-list-item">
+            <div class="date">2019年03月</div>
+            <div class="content">......</div>
+        </li>
+    </ul>
+</div>
+
+<div class='hobby-box' id='hobby-box'>
+    <h2 class='heading-text'>私の趣味</h2>
+    <!-- これを消して下に書いていこう -->
+    <p style='text-align: center'>↓↓↓↓↓↓ここからはあなたのオリジナルなデザインを作ってみよう↓↓↓↓↓↓</p>
+ </div>
+
+
+</body>
+</html>
+<style>
+/* 名前と大学名 */
+.tops{
+  margin-left: 120px;
+  color: #4D4D4D;
+}
+/* 写真と3つの要素が入ったdiv */
+.middle{
+  display: flex;
+  height: 600px;
+}
+/* 丸い画像 */
+.myImage{
+  border-radius: 50%;  
+  width:  380px;       
+  height: 380px;
+  margin-left: 50px;
+}
+/* ポートフォリオの文字 */
+.portfolio{
+  color: #4D4D4D;
+  margin: 50px;
+  font-size: 20px;
+}
+
+/* 3つの要素が入ったdiv */
+.middle-box{
+  display: flex;
+}
+.links{
+  text-decoration: none;
+}
+/* 要素を表す円形 */
+.circle{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: white ;
+  text-align : center;
+}
+/* 円形の色指定 */
+.hobby{
+  background: #E83556;
+}
+.strong{
+  background: #61D0D4;
+}
+.wantToDo{
+  background: #D1C926;
+}
+/* 長所 */
+.strong-box{
+background: #61D0D4;
+margin: 0 calc(50% - 50vw);
+width: 100vw;
+padding: 50px 0 ;
+}
+/* 見出し */
+.heading-text{
+  color: #4D4D4D;
+  margin-left: 120px;
+  font-size: 32px;
+}
+.strong-box .strong-image{
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+}
+.strong-box .strong-point{
+  text-align: center;
+  margin: 100px;
+  color: #4D4D4D;
+}
+.strong-box .strong-dai{
+  font-size: 25px;
+}
+/* 経歴 */
+.timeline {
+  background: #D1C926;
+  margin: 0px calc(50% - 50vw);
+  width: 100vw;
+  padding: 50px 0 ;
+}
+
+.timeline-list {
+    width: 100vw;
+    margin: 100px auto;
+}
+
+.timeline-list-item {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.timeline-list-item .date {
+    width: 20%;
+    padding: 0 0 0 20px;
+    color: #4D4D4D;
+    font-weight: bold;
+}
+
+.timeline-list-item .content {
+    position: relative;
+    width: 80%;
+    padding: 0 20px 60px 30px;
+    color: #4D4D4D;
+    border-left: 1px solid #aaaaaa;
+}
+
+.timeline-list-item .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; 
+    width: 20px;
+    height: 20px;
+    background-color: #E83556;
+    border-radius: 10px;
+}
+
+/* 趣味 */
+.hobby-box{
+background: #E83556;
+margin: 0 calc(50% - 50vw);
+width: 100vw;
+padding: 50px 0 ;
+}
+
+</style>
